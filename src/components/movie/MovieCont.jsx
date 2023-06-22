@@ -3,7 +3,7 @@ import MovieItem from "./MovieItem";
 
 const MovieCont = ({ movies }) => {
   return (
-    <div className="movie__cont container">
+    <div className="movie__cont container SCoreDream">
       <ul>
         {movies.map((movie, index) => (
           <MovieItem key={index} movie={movie} />

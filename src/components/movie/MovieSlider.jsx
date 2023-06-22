@@ -30,7 +30,7 @@ const MovieSlider = ({ movies }) => {
         effect={"coverflow"}
         grabCursor={true}
         centeredSlides={true}
-        slidesPerView={"auto"}
+        slidesPerView={"3"}
         spaceBetween={30}
         speed={1000}
         autoplay={{

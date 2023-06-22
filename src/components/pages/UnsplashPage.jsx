@@ -10,6 +10,7 @@ import { useState, useEffect } from "react";
 
 const UnsplashPage = () => {
   const [images, setImages] = useState([]);
+  const [sliderImages, setSliderImages] = useState([]);
 
   const search = async (query) => {
     await fetch(
@@ -33,13 +34,26 @@ const UnsplashPage = () => {
       .then((response) => response.json())
       .then((result) => setImages(result))
       .catch((error) => console.log("error", error));
+
+    fetch(
+      "https://api.unsplash.com/photos?client_id=jH0imhhs5rWunB3C4xoZHkzW4cuMAi0DT3c3uBNHn54&per_page=30"
+    )
+      .then((response) => response.json())
+      .then((result) => {
+        // Filter out only horizontal images
+        const horizontalImages = result.filter(
+          (image) => image.width > image.height
+        );
+        setSliderImages(horizontalImages);
+      })
+      .catch((error) => console.log("error", error));
   }, []);
 
   return (
     <>
       <Contents>
         <ContTitle title="unsplash" />
-        <UnsplashSlider />
+        <UnsplashSlider sliderImages={sliderImages} />
         <UnsplashSearch onSearch={search} />
         <UnsplashTag />
         <UnsplashCont images={images} />

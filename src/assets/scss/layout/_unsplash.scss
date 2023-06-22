@@ -61,3 +61,11 @@
     border-radius: 50px;
   }
 }
+
+// unsplash__slider
+.unsplash__slider {
+  margin-bottom: 50px;
+  .swiper-wrapper {
+    transition-timing-function: linear;
+  }
+}

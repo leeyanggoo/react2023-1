@@ -34,12 +34,15 @@
   }
 }
 
-// youtube__page
-.youtube__page {
-}
+// youtube__slider
 .youtube__slider {
-  display: none;
+  margin-bottom: 50px;
+  .swiper-wrapper {
+    transition-timing-function: linear;
+  }
 }
+
+// youtube__search
 .youtube__search {
   text-align: center;
   margin-bottom: 50px;
@@ -57,23 +60,34 @@
     border-radius: 50px;
   }
 }
+
+// youtube__tag
 .youtube__tag {
-  ul {
+  div {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
     margin-top: 50px;
 
-    li {
-      a {
-        border: 1px solid var(--button_red);
-        padding: 10px 20px;
-        margin: 0 10px;
-        color: var(--button_red);
+    button {
+      border: 1px solid var(--button_red);
+      padding: 10px 20px;
+      margin: 0 10px;
+      color: var(--button_red);
+      cursor: pointer;
+      background: linear-gradient(to right, var(--button_red) 50%, white 50%);
+      background-size: 200% 100%;
+      background-position: right bottom;
+      transition: all 0.5s ease-out;
+      &:hover {
+        background-position: left bottom;
+        color: #fff;
       }
     }
   }
 }
+
+// youtube__cont
 .youtube__cont {
   ul {
     display: flex;

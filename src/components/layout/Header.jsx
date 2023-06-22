@@ -18,7 +18,7 @@ const Header = (props) => {
         <nav className="header__nav" role="navigation">
           <ul>
             <li>
-              <Link to="/">웹진 소개</Link>
+              <Link to="/intro">웹진 소개</Link>
             </li>
             <li>
               <Link to="/port">오늘의 시</Link>
@@ -31,9 +31,6 @@ const Header = (props) => {
             </li>
             <li>
               <Link to="/youtube">정기구독</Link>
-            </li>
-            <li>
-              <Link to="/home">문의</Link>
             </li>
           </ul>
         </nav>

@@ -1,9 +1,30 @@
-import React from 'react'
+import React from "react";
 
-const YoutubeCont = () => {
+const YoutubeItem = ({ youtube }) => {
   return (
-    <div>YoutubeCont</div>
-  )
-}
+    <li>
+      <a
+        href={`https://www.youtube.com/watch?v=${youtube.id.videoId}`}
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <img src={youtube.snippet.thumbnails.medium.url} alt="유튜브" />
+        <span>{youtube.snippet.title}</span>
+      </a>
+    </li>
+  );
+};
 
-export default YoutubeCont
+const YoutubeCont = ({ youtubes }) => {
+  return (
+    <div className="youtube__cont container">
+      <ul>
+        {youtubes.map((youtube, index) => (
+          <YoutubeItem key={index} youtube={youtube} />
+        ))}
+      </ul>
+    </div>
+  );
+};
+
+export default YoutubeCont;
