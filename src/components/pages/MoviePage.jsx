@@ -11,7 +11,7 @@ const MoviePage = () => {
 
   const search = async (query) => {
     await fetch(
-      `https://api.themoviedb.org/3/search/movie?api_key=35deb8704c2372673b61a5e807e3688e&language=ko-KR&query=SEARCH_QUERY&page=1&include_adult=true&limit=30&query=${query}`
+      `https://api.themoviedb.org/3/search/movie?api_key=35deb8704c2372673b61a5e807e3688e&language=ko-KR&query=SEARCH_QUERY&page=1&limit=30&query=${query}`
     )
       .then((response) => response.json())
       .then((result) => setMovies(result.results))
@@ -20,7 +20,7 @@ const MoviePage = () => {
 
   useEffect(() => {
     fetch(
-      "https://api.themoviedb.org/3/movie/popular?api_key=35deb8704c2372673b61a5e807e3688e&language=ko-KR&query=SEARCH_QUERY&page=1&include_adult=true&limit=30"
+      "https://api.themoviedb.org/3/movie/popular?api_key=35deb8704c2372673b61a5e807e3688e&language=ko-KR&query=SEARCH_QUERY&page=1&limit=30"
     )
       .then((response) => response.json())
       .then((result) => setMovies(result.results))
