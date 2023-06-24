@@ -15,7 +15,7 @@ const App = () => {
       <Header attr={["header__wrap", "bg-blue", "NanumM"]} />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/" element={<IntroPage />} />
+        <Route path="/intro" element={<IntroPage />} />
         <Route path="/port" element={<PortPage />} />
         <Route path="/youtube" element={<YoutubePage />} />
         <Route path="/movie" element={<MoviePage />} />

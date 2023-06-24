@@ -1,11 +1,13 @@
 import React from "react";
 import Contents from "../layout/Contents";
-import ContTitle from "../layout/ContTitle";
+import Introtitle from "../intro/IntroTitle";
+import IntroCont from "../intro/IntroCont";
 
 const IntroPage = () => {
   return (
     <Contents>
-      <ContTitle title="intro" />
+      <Introtitle />
+      <IntroCont />
     </Contents>
   );
 };

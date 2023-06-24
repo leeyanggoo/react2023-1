@@ -31,7 +31,7 @@ const MovieSlider = ({ movies }) => {
         grabCursor={true}
         centeredSlides={true}
         slidesPerView={"3"}
-        spaceBetween={30}
+        spaceBetween={20}
         speed={1000}
         autoplay={{
           delay: 3000,
@@ -42,8 +42,8 @@ const MovieSlider = ({ movies }) => {
         modules={[Autoplay, Navigation, Pagination]}
       >
         {movies.map((movie, index) => (
-          <SwiperSlide>
-            <MovieImg key={index} movie={movie} />
+          <SwiperSlide key={index}>
+            <MovieImg movie={movie} />
           </SwiperSlide>
         ))}
       </Swiper>

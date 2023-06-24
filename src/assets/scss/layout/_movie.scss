@@ -15,23 +15,23 @@
       margin-bottom: 100px;
     }
   }
-  .movie__body {
-    padding-left: calc((100% - 1280px) / 2);
+  // .movie__body {
+  //   padding-left: calc((100% - 1280px) / 2);
 
-    .movie__item {
-      display: flex;
-      gap: 20px;
+  //   .movie__item {
+  //     display: flex;
+  //     gap: 20px;
 
-      > div {
-        width: 16%;
+  //     > div {
+  //       width: 16%;
 
-        img {
-          width: 100%;
-          border-radius: 20px;
-        }
-      }
-    }
-  }
+  //       img {
+  //         width: 100%;
+  //         border-radius: 20px;
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 //movie__cont

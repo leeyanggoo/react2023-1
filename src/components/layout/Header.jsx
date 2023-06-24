@@ -24,13 +24,13 @@ const Header = (props) => {
               <Link to="/port">오늘의 시</Link>
             </li>
             <li>
-              <Link to="/unsplash">연재</Link>
+              <Link to="/unsplash">사진</Link>
             </li>
             <li>
-              <Link to="/movie">출간</Link>
+              <Link to="/movie">영화</Link>
             </li>
             <li>
-              <Link to="/youtube">정기구독</Link>
+              <Link to="/youtube">유튜브</Link>
             </li>
           </ul>
         </nav>

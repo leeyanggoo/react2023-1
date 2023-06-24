@@ -27,8 +27,8 @@ const Slider = (props) => {
               <div className="slider s1 container">
                 <div className="text">
                   <h3>
-                    "너의 장미꽃이 그토록 소중한 것은
-                    <br />그 꽃을 위해 네가 공들인 그 시간 때문이야."
+                    너의 장미꽃이 그토록 소중한 것은
+                    <br />그 꽃을 위해 네가 공들인 그 시간 때문이야.
                   </h3>
                   <p>
                     우리가 아직도 어린왕자를 찾아가는 이유
@@ -54,12 +54,12 @@ const Slider = (props) => {
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className="bg-gradient">
               <div className="slider s1 container">
                 <div className="text">
                   <h3>
-                    "너의 장미꽃이 그토록 소중한 것은
-                    <br />그 꽃을 위해 네가 공들인 그 시간 때문이야."
+                    너의 장미꽃이 그토록 소중한 것은
+                    <br />그 꽃을 위해 네가 공들인 그 시간 때문이야.
                   </h3>
                   <p>
                     우리가 아직도 어린왕자를 찾아가는 이유
@@ -69,6 +69,12 @@ const Slider = (props) => {
                   <a href="/" className="more button-blue">
                     더 알아보기
                   </a>
+                </div>
+                <div className="img">
+                  <img
+                    src="./assets/images/slider/littleprince.png"
+                    alt="어린왕자"
+                  />
                 </div>
                 <div className="circle" aria-label="hidden">
                   <span className="circle c1"></span>
@@ -79,12 +85,12 @@ const Slider = (props) => {
                 </div>
               </div>
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className="bg-gradient">
               <div className="slider s1 container">
                 <div className="text">
                   <h3>
-                    "너의 장미꽃이 그토록 소중한 것은
-                    <br />그 꽃을 위해 네가 공들인 그 시간 때문이야."
+                    너의 장미꽃이 그토록 소중한 것은
+                    <br />그 꽃을 위해 네가 공들인 그 시간 때문이야.
                   </h3>
                   <p>
                     우리가 아직도 어린왕자를 찾아가는 이유
@@ -94,6 +100,12 @@ const Slider = (props) => {
                   <a href="/" className="more button-blue">
                     더 알아보기
                   </a>
+                </div>
+                <div className="img">
+                  <img
+                    src="./assets/images/slider/littleprince.png"
+                    alt="어린왕자"
+                  />
                 </div>
                 <div className="circle" aria-label="hidden">
                   <span className="circle c1"></span>

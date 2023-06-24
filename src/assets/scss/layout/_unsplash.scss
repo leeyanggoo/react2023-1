@@ -16,21 +16,19 @@
     }
   }
   .unsplash__body {
-    padding-left: calc((100% - 1280px) / 2);
-
-    .unsplash__item {
-      display: flex;
-      gap: 10px;
-
-      > div {
-        width: 25%;
-
-        img {
-          width: 100%;
-          border-radius: 20px;
-        }
-      }
-    }
+    // padding-left: calc((100% - 1280px) / 2);
+    // width: 100%;
+    // .unsplash__item {
+    //   height: 400px;
+    //   display: flex;
+    //   gap: 10px;
+    //   overflow: hidden;
+    //   flex-wrap: wrap;
+    //   flex-direction: column;
+    //   // > div {
+    //   //   width: 25%;
+    //   // }
+    // }
   }
 }
 
@@ -67,5 +65,38 @@
   margin-bottom: 50px;
   .swiper-wrapper {
     transition-timing-function: linear;
+  }
+}
+
+// unplash__tag
+.unplash__tag {
+  ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+
+    li {
+      a {
+        font-family: "GmarketSans";
+        border: 1px solid var(--button_green);
+        padding: 10px 20px;
+        margin: 0 10px;
+        color: var(--button_green);
+        cursor: pointer;
+        background: linear-gradient(
+          to right,
+          var(--button_green) 50%,
+          white 50%
+        );
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all 0.5s ease-out;
+        &:hover {
+          background-position: left bottom;
+          color: #fff;
+        }
+      }
+    }
   }
 }

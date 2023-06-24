@@ -51,11 +51,11 @@ const UnsplashPage = () => {
 
   return (
     <>
-      <Contents>
+      <Contents images={images}>
         <ContTitle title="unsplash" />
         <UnsplashSlider sliderImages={sliderImages} />
         <UnsplashSearch onSearch={search} />
-        <UnsplashTag />
+        <UnsplashTag onSearch={search} />
         <UnsplashCont images={images} />
       </Contents>
     </>
