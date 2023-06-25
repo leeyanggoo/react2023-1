@@ -21,7 +21,7 @@ const Header = (props) => {
               <Link to="/intro">웹진 소개</Link>
             </li>
             <li>
-              <Link to="/port">오늘의 시</Link>
+              <Link to="/today">오늘의 시</Link>
             </li>
             <li>
               <Link to="/unsplash">사진</Link>

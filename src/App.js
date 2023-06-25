@@ -4,7 +4,7 @@ import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 import Home from "./components/pages/Home";
 import IntroPage from "./components/pages/IntroPage";
-import PortPage from "./components/pages/PortPage";
+import TodayPage from "./components/pages/TodayPage";
 import YoutubePage from "./components/pages/YoutubePage";
 import MoviePage from "./components/pages/MoviePage";
 import UnsplashPage from "./components/pages/UnsplashPage";
@@ -16,7 +16,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/intro" element={<IntroPage />} />
-        <Route path="/port" element={<PortPage />} />
+        <Route path="/today" element={<TodayPage />} />
         <Route path="/youtube" element={<YoutubePage />} />
         <Route path="/movie" element={<MoviePage />} />
         <Route path="/unsplash" element={<UnsplashPage />} />
