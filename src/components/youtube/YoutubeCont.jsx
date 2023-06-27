@@ -8,7 +8,10 @@ const YoutubeItem = ({ youtube }) => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <img src={youtube.snippet.thumbnails.medium.url} alt="유튜브" />
+        <img
+          src={youtube.snippet.thumbnails.medium.url}
+          alt={youtube.snippet.title}
+        />
         <span>{youtube.snippet.title}</span>
       </a>
     </li>
